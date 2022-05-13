@@ -37,6 +37,7 @@ class Libro{
             echo "Volumen: ".$this->volumen."<br>";
             echo "Es un Comic";
             echo "<br>";
+            
         }else{
             echo "Autor: ".$this->autor."<br>";
             echo "Titulo: ".$this->titulo."<br>";
@@ -56,7 +57,7 @@ class Libro{
 class Comic extends Libro{
     private $ilustradores;
     private $volumen;
-    
+
 }
 
 
