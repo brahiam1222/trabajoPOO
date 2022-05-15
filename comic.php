@@ -26,10 +26,10 @@
         public function verInfo() {
 
 
-            $historieta = "<table>
+            $historieta = "<table class='table'>
             <tr>
-                <th>Ilustrador</th>
-                <th>Volumen</th>
+                <th scope='col'>Ilustrador</th>
+                <th scope='col'>Volumen</th>
             
             </tr>
             <tr>

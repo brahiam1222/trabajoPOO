@@ -22,13 +22,13 @@ class Libro{
     }
     public function verInfo(){
     
-        $informacion = "<table>
+        $informacion = "<table class='table'>
         <tr>
-            <th>ISBN</th>
-            <th>Autor</th>
-            <th>Titulo</th>
-            <th>Precio</th>
-            <th>Stock</th>
+            <th scope='col'>ISBN</th>
+            <th scope='col'>Autor</th>
+            <th scope='col'>Titulo</th>
+            <th scope='col'>Precio</th>
+            <th scope='col'>Stock</th>
             
         </tr>
         <tr>
