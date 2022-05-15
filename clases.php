@@ -1,6 +1,6 @@
 <?php
 
-//clase de libros
+
 class Libro{
     private $autor;
     private $titulo;
@@ -9,60 +9,60 @@ class Libro{
     private $id;
 
 
-    //constructor de la clase libro que muestra los datos de un libro
-    public function __construct($autor, $titulo, $precio, $stock, $id, $ilustradores, $volumen){
+    
+    public function __construct($autor, $titulo, $precio, $stock, $id){
         $this->autor = $autor;
         $this->titulo = $titulo;
         $this->precio = $precio;
         $this->stock = $stock;
         $this->id = $id;
-        $this->ilustradores = $ilustradores;
-        $this->volumen = $volumen;
 
 
 
-}
-
-
-    //funcion que muestra los datos de un libro
+    }
     public function verInfo(){
-
-        if($this->ilustradores != null){
-            echo "Autor: ".$this->autor."<br>";
-            echo "Titulo: ".$this->titulo."<br>";
-            echo "Precio: ".$this->precio."<br>";
-            echo "Stock: ".$this->stock."<br>";
-            echo "Id: ".$this->id."<br>";
-            echo "Ilustradores: ".$this->ilustradores."<br>";
-            echo "Volumen: ".$this->volumen."<br>";
-            echo "Es un Comic";
-            echo "<br>";
+    
+        $informacion = "<table>
+        <tr>
+            <th>ISBN</th>
+            <th>Autor</th>
+            <th>Titulo</th>
+            <th>Precio</th>
+            <th>Stock</th>
             
-        }else{
-            echo "Autor: ".$this->autor."<br>";
-            echo "Titulo: ".$this->titulo."<br>";
-            echo "Precio: ".$this->precio."<br>";
-            echo "Stock: ".$this->stock."<br>";
-            echo "Id: ".$this->id."<br>";
-            echo "Es un Libro";
-            echo "<br>";
-        }
-
+        </tr>
+        <tr>
+            <td>$this->id</td>
+            <td>$this->autor</td>
+            <td>$this->titulo</td>
+            <td>$this->precio</td>
+            <td>$this->stock</td>
+            
+                                    
+    
+        </table>";
+        
+        return $informacion;
+        
+    
+    
+    
         
     }
 
+
+    
+
     
 }
-// clase que hereda de la clase libro   
-class Comic extends Libro{
-    private $ilustradores;
-    private $volumen;
 
-}
+$libro1 = new Libro("J.R.R. Tolkien", "El señor de los anillos", "50", "10", "978-0547928216", "J.R.R. Tolkien", "3");
+
+// $comic = new Comic("John Smith", "Harry Potter", "50", "10", "978-0547928216", "Harry Potter", "3");
 
 
 
-
+// echo $libro1->verInfo();
 
 
 
