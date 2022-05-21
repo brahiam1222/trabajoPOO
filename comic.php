@@ -45,12 +45,14 @@
             
 
         }
+
+        
         
     
     }
 
 
-    $comic = new Comic("John Smith", "Harry Potter", "50", "10", "978-0547928216", "Harry Potter", "3");
+    
 
     // echo $comic->verInfo();
 

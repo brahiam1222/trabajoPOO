@@ -21,6 +21,8 @@ class Libro{
 
     }
     public function verInfo(){
+
+        
     
         $informacion = "<table class='table'>
         <tr>
@@ -56,7 +58,7 @@ class Libro{
     
 }
 
-$libro1 = new Libro("J.R.R. Tolkien", "El señor de los anillos", "50", "10", "978-0547928216", "J.R.R. Tolkien", "3");
+
 
 // $comic = new Comic("John Smith", "Harry Potter", "50", "10", "978-0547928216", "Harry Potter", "3");
 
